@@ -1,0 +1,29 @@
+UART master
+
+char merastr[8]="Manipal";
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  Serial.write(merastr,10);
+  delay(1000);
+}
+
+
+UART slave
+
+char merastr[12];
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop() 
+{
+  Serial.readBytes(merastr,7);
+  Serial.println(merastr);
+  delay(1000);
+}
