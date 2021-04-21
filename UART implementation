@@ -1,29 +1,29 @@
 UART master
 
-char merastr[8]="Manipal";
+char merastr[8]="Manipal"; //data from string
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(9600); //setting baud rate
 }
 
 void loop()
 {
-  Serial.write(merastr,10);
+  Serial.write(merastr,10); //writing string data
   delay(1000);
 }
 
 
 UART slave
 
-char merastr[12];
+char merastr[12]; //variable is initialised to store the data
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(9600); //setting baud rate
 }
 
 void loop() 
 {
-  Serial.readBytes(merastr,7);
-  Serial.println(merastr);
+  Serial.readBytes(merastr,7); data read
+  Serial.println(merastr); //data is printed
   delay(1000);
 }
