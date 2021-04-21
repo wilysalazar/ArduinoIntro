@@ -1,0 +1,22 @@
+int sensorPin = A0;
+int leadPin = 12;
+int sensorValue = 0;
+
+void setup()
+{
+  pinMode(leadPin, OUTPUT); //declaring leadPin as the output
+  
+}
+
+void loop()
+{
+  sensorValue = analogRead(A0);  // read the value from the sensor
+  
+  if(sensorvlaue > 500){
+  digitalWrite(leadPin, LOW);
+  }
+  
+  else{
+  digitalWrite(ledPin, HIGH);
+  }
+}
