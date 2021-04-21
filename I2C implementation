@@ -5,7 +5,7 @@ int pushButton = A0;
 int x = 0;
 void setup()
 {
-  Wire.begin();
+  Wire.begin(); //joins the bus
   pinMode(pushButton, INPUT);
 }
 
