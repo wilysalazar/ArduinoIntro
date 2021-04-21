@@ -23,7 +23,7 @@ void setup()
 
 void loop() 
 {
-  Serial.readBytes(merastr,7); data read
+  Serial.readBytes(merastr,7); //data read
   Serial.println(merastr); //data is printed
   delay(1000);
 }
